@@ -1,0 +1,47 @@
+{
+  "name": "ceritsc-elrepo",
+  "version": "0.9.0",
+  "author": "ceritsc",
+  "summary": "Setup the ELRepo repository",
+  "license": "MIT",
+  "source": "https://github.com/CERIT-SC/puppet-elrepo.git",
+  "project_page": "https://github.com/CERIT-SC/puppet-elrepo",
+  "issues_url": "https://github.com/CERIT-SC/puppet-elrepo/issues",
+  "tags": [
+    "elrepo"
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat"
+    },
+    {
+      "operatingsystem": "CentOS"
+    },
+    {
+      "operatingsystem": "Scientific"
+    },
+    {
+      "operatingsystem": "OracleLinux"
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": "3.3.x"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": "3.0"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 4.0.0"
+    },
+    {
+      "name": "ceritsc-yum",
+      "version_requirement": ">= 0.9.0"
+    }
+  ]
+}
