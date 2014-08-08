@@ -9,7 +9,7 @@ class elrepo::params {
   $enabled_kernel = 0
   $enabled_extras = 0
 
-  unless $::osfamily != 'RedHat' or $::operatingsystem == 'Fedora' {
-    fail("Unsupported OS (${::operatingsystem})")
+  unless $::osfamily == 'RedHat' or $::operatingsystem != 'Fedora' {
+    fail("Unsupported OS: ${::operatingsystem}")
   }
 }
